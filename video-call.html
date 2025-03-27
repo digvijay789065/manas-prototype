@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Call with Doctor</title>
+    <link rel="stylesheet" href="video-call.css">
+</head>
+<body>
+    <header>
+    <div class="container">
+        <div class="merged-video-container">
+            <video id="remoteVideo" autoplay></video>
+            <video id="uploadedVideo" muted playsinline>
+                <source src="doctor.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="controls">
+            <button class="control-button" onclick="toggleMute()">Mute</button>
+            <button class="control-button end-call" onclick="endCall()">End Call</button>
+        </div>
+    </div>
+</header>
+
+    <script src="video-call.js"></script>
+</body>
+</html>

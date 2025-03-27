@@ -1,0 +1,54 @@
+body {
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center horizontally */
+    justify-content: flex-start; /* Align content to the top */
+    height: 100vh; /* Ensure full viewport height */
+    margin: 0;
+    padding-top: 40px; /* Add padding to push content down slightly */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; /* Ensure the container spans the full width */
+}
+
+.merged-video-container {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 0 auto; /* Center horizontally */
+    margin-top: 0; /* Remove extra margin */
+}
+
+video {
+    width: 100%;
+    margin: 10px 0;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.control-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.control-button.end-call {
+    background-color: red;
+    color: white;
+}
+
+.control-button {
+    background-color: blue;
+    color: white;
+}
