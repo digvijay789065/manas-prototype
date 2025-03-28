@@ -3,28 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chat Interface</title>
-    <link rel="stylesheet" href="chat.css">
+    <link rel="stylesheet" href="main.css">
+    <title>User Details</title>
 </head>
 <body>
-    <div class="chat-container">
-        <div class="chat-header">
-            <h2>Chat Room</h2>
+    <h1>Dr. Manas is here!</h1>
+    <div class="options">
+        <div class="option">
+            <button id="videoCall" onclick="location.href='video-call.html';">
+            <img src="video-icon.png" alt="Video Call Logo">
+            Video Call
+            </button>
         </div>
-        <div class="chat-messages">
-            <div class="message received">
-                <p>Hello! How can I help you?</p>
-                <span class="timestamp">10:00 AM</span>
-            </div>
-            <div class="message sent">
-                <p>I need some assistance with my account.</p>
-                <span class="timestamp">10:01 AM</span>
-            </div>
-        </div>
-        <div class="chat-input">
-            <input type="text" placeholder="Type your message..." />
-            <button>Send</button>
+        <div class="option">
+            <button id="chat" onclick="location.href='chat.html';">
+            <img src="chat-icon.png" alt="Chat Logo">
+            Chat
+            </button>
         </div>
     </div>
+
+   
+
+    <script src="main.js"></script>
 </body>
 </html>
